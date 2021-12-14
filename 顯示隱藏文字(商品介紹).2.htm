@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" charset="width=decice-width,initial-scale=1">
+	<title>JQuery練習</title>
+	<!--JQuery語法引用網址-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--JQuery UI <User Interface 使用者介面/外觀/格式) 語法引用網址-->
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<!--JQuery UI <User Interface 使用者介面/外觀/格式) css 語法引用網址-->
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.0-rc.3/themes/smoothness/jquery-ui.css">
+	
+	<script type="text/javascript">
+		//先呼叫文件，將文件準備好
+		$(document).ready(function(){
+			//呼叫連結，設定連結按下Click時要做的動作
+			$(".mylink").click(function(){
+				//顯示感謝文字
+				alert("謝謝，接下來將引導到文創商城")
+				setTimeout(window.open('http://www.pchome.com.tw'),500)
+			});
+		});
+	</script>
+	
+</head>
+<body>
+	<!--設定mylink超連結-->
+<a class="mylink" href="https://www.gohakka.org" target="_blank">客語翻譯</a>	
+
+
+
+</body>
+</html>

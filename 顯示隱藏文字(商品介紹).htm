@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" charset="width=decice-width,initial-scale=1">
+	<title>JQuery練習</title>
+	<!--JQuery語法引用網址-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--JQuery UI <User Interface 使用者介面/外觀/格式) 語法引用網址-->
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<!--JQuery UI <User Interface 使用者介面/外觀/格式) css 語法引用網址-->
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.0-rc.3/themes/smoothness/jquery-ui.css">
+	<!--要用CSS display 先將商品介紹文字隱藏-->
+	<style type="text/css">
+		.intro{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		//先呼叫文件，將文件準備好
+		$(document).ready(function(){
+			//呼叫按鈕，偵測按鈕按下時要做的動作
+			$(".intro_btn").click(function(){
+				//讓介紹文字顯示出來
+				//$(".intro").show();
+
+				//顯示/隱藏
+				$(".intro").toggle();
+			});
+		});
+	</script>
+	
+</head>
+<body>
+	<!--設定按鈕intro_btn-->
+	<input type="button" class="intro_btn" value="商品詳細介紹">
+	<P>
+		<!--設定商品介紹文字intro-->
+	<div class="intro">這是詳細的商品介紹 Engineered for cleaning anywhere with long-lasting battery power and strong pick up performance.Save $100 through December 18, 2021. </div>
+
+
+
+</body>
+</html>
